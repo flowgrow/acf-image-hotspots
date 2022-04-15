@@ -134,7 +134,7 @@
 		setLinkedImg = function() {
 
 			if ($fieldImg.attr('data-label') == "post-thumbnail") {
-				$imgCon = $('#set-post-thumbnail img')
+				$imgCon = $('#set-post-thumbnail');	
 			} else {
 				$imgCon = $field.siblings( imgSelector );
 			}
@@ -156,7 +156,7 @@
 
 			}
 
-			$img = $imgCon.find('img[data-name="image"]');
+			$img = $imgCon.find('img[data-name="image"], img[class*="attachment"]');
 
 			return true;
 
